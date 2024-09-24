@@ -1,0 +1,256 @@
+:root {
+  --color-text: #fff;
+  --color-text-secondary: #c0c0c0;
+  --color-main-cta: #167bf7;
+  --color-main-cta-effect: #EC2F46;
+  --bg-color: #00030c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--color-text);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+  width: 100%;
+  padding: 100px 80px;
+  gap: 80px;
+}
+
+.container__content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.container__content__title {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.container__content__title.secondary-title {
+  font-size: 3rem;
+}
+
+.container__content__image {
+  max-width: 340px;
+}
+
+.content__button {
+  width: 100%;
+  color: var(--color-text);
+  /* background-color: var(--color-main-cta); */
+  border: 1px solid white;
+  text-decoration: none;
+  padding: 16px 10px;
+  border-radius: 8px;
+}
+
+.content__button.main-button {
+  background-color: var(--color-main-cta);
+  border: none;
+}
+
+.content__text.secondary-text {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+}
+
+.container__image {
+  width: 50%;
+}
+
+.container__image img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+.content__devices__list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.content__devices__list__item_title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.content__devices__list__item img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+}
+
+#signup {
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+  justify-content: start;
+  width: 100%;
+  max-width: 1440px;
+  min-height: 100vh;
+}
+
+#signup .container {
+  width: 100%;
+  justify-content: flex-start;
+  height: 100vh;
+}
+
+#signup .container__content {
+  max-width: 588px;
+  text-align: center;
+  align-items: center;
+}
+
+#signup .content__button {
+  max-width: 512px;
+}
+
+#signup .container__content__image {
+  margin: 10px 0;
+}
+
+#combo .content__text {
+  color: #f0f0f0;
+}
+
+#combo .content__button {
+  width: auto;
+}
+
+#devices .container__content {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  flex-direction: column;
+  gap: 24px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.footer__links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer__links__cta {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.footer__text {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+}
+
+@media (max-width: 1000px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 720px) {
+  html {
+    font-size: 16px;
+  }
+
+  .container {
+    gap: 30px;
+    padding: 80px 30px;
+    flex-direction: column;
+  }
+
+  .container__image {
+    width: 100%;
+  }
+
+  .container__content {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .container__content__title.secondary-title {
+    font-size: 2.3rem;
+  }
+
+  .content__devices__list {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .content__devices__list__item img {
+    max-width: 150px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .content__devices__list__item_title {
+    font-size: 1.3rem;
+  }
+
+  .footer {
+    padding-bottom: 20px;
+  }
+
+  .footer__links {
+    flex-direction: column;
+  }
+
+  #signup {
+    height: auto;
+    background-image: none;
+    min-height: 100vh;
+  }
+
+  #signup .container__content {
+    width: 100%;
+  }
+
+  #signup .container {
+    height: auto;
+    min-height: 100vh;
+    justify-content: center;
+  }
+
+  #combo {
+    flex-direction: column-reverse;
+  }
+}
